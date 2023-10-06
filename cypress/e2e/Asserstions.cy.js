@@ -4,7 +4,6 @@
 
 describe("Assesions Demo", ()=>{
 
-
     it("Implicit Assesrtions", ()=>{
 
         cy.visit("https://opensource-demo.orangehrmlive.com/web/index.php/auth/login")
@@ -43,16 +42,11 @@ describe("Assesions Demo", ()=>{
            //.its('val').should('eq',"Santhoshi")
            .should('have.value', "Santhoshi")
            .clear()
-
-
-
            /// explicit assertions 
 
            cy.get('input[name="username"]').should('be.visible').type("Admin")
            cy.get('input[name="password"]').should('be.visible').type("admin123")
            cy.get('button[type="submit"]').should('be.visible').click()
-
-
 
            ///it needs js methos
 

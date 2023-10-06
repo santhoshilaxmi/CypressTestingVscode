@@ -10,7 +10,6 @@ describe('Test FlipKart', () => {
 
     cy.get(".promoHeader").should("have.length",2)
 
-
     //implicit - built in assertions
     // should, and
     // explicit - need to develop
